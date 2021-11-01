@@ -22,4 +22,20 @@ fn main(){
 
 	let character:char = 'h';
 	println!("character {}", character);
+
+	//immutable
+	//not declared
+
+	//mutable
+	let mut money:i32 = 25_000;
+	println!("money is {}", money);
+	money = 35_000;
+	println!("money changed is {}", money);
+
+	//constant naming convention
+	const userlimit:i32 = 100;
+	const pi:f32 = 3.145;
+
+	println!("user limit, pi {} {}", userlimit, pi);
+
 }

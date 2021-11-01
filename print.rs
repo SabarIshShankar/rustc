@@ -12,6 +12,4 @@ fn main(){
 
 	let name = "name";
 	println!("{}", name);
-
-
 }
