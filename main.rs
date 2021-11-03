@@ -1,41 +1,42 @@
+//strings in rust
 fn main(){
-	println!("Hello");
-	let string = "Rust01";
-	println!("language is {}", string);
+	let company:&'static str = "Rust tutorial";
+	let location:&'static str = "location";
+	println!("{} {}", company, location);
 
-	let result = 10;
-	let age:u32 = 20;
-	let sum:i32 = 5-15;
-	println!("{} {} {}", result, age, sum);
+	let empty_string = String::new();
+	println!("length is {}", empty_string.len());
 
-	let result = 10.00;
-	let interest:f32 = 0.01;
-	println!("{} {}", result, interest);
+	let mut z = String::new();
+	z.push_str("hello");
+	println!("{}", z);
 
-	//automatic type casting
-	//let interest1:f32 = 8;
-	//println!("interest is {}", interest1);
-	
-	//number separator
-	let float_with_separator = 11_000.555_001;
-	println!("float value {}", float_with_separator);
+	let name1 = "Hello tutorialspoint".to_string();
+	println!("{}", name1);
+	let name2 = name1.replace("Hello", "Howdy");
+	println!("{}", name2);
 
-	let character:char = 'h';
-	println!("character {}", character);
+	let fullname = "Tutorials Point \r\n";
+	println!("Before trim");
+	println!("length is {}", fullname.len());
+	println!();
+	println!("After trim");
+	println!("length is {}", fullname.trim().len());
 
-	//immutable
-	//not declared
+	let msg = "Tutorialpoints has good tutorials".to_string();
+	let mut i = 1;
+	for token in msg.split_whitespace(){
+		println!("token {} {}", i, token);
+		i += 1;
+	}
 
-	//mutable
-	let mut money:i32 = 25_000;
-	println!("money is {}", money);
-	money = 35_000;
-	println!("money changed is {}", money);
+	let fullname="John,Wick,Reeves";
+	for token in fullname.split(","){
+		println!("token {}", token);
+	}
 
-	//constant naming convention
-	const userlimit:i32 = 100;
-	const pi:f32 = 3.145;
-
-	println!("user limit, pi {} {}", userlimit, pi);
-
+	println!("\n");
+	let tokens:Vec<&str> = fullname.split(",").collect();
+	println!("{} {} {}", tokens[0], tokens[1], tokens[2]);
 }
+
