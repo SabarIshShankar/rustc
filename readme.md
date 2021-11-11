@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://github.com/Sabarish/github-readme-streak-stats">
-    <img title="" alt="" src="https://github-readme-streak-stats.herokuapp.com/?user=sabarishshankar&theme=monokai-metallian&hide_border=true"/>
+    <img title="" alt="" src="https://github-readme-streak-stats.herokuapp.com/?user=SabarIshShankar&theme=monokai-metallian&hide_border=true"/>
   </a>
 </p>
 
